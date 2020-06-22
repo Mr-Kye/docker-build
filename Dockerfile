@@ -1,6 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER Foo Bar <exampleuser@example.com>
 
+RUN echo "start Dockerfile"
 RUN apt-get update
 RUN apt-get install -y nginx
 RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
